@@ -22,16 +22,14 @@ public class GameNumber {
             if (x == arrayList.size() - 1) {
                 break;
             }
-            if (arrayList.get(x) + arrayList.get(x + 1) == 9) {
+            if (arrayList.get(x) + arrayList.get(x + 1) == 9 ||
+                    arrayList.get(x) == (arrayList.get(x + 1))) {
                 arrayList.remove(x);
                 arrayList.remove(x);
                 count++;
-                x--;
-            } else if (arrayList.get(x) == arrayList.get(x + 1)) {
-                arrayList.remove(x);
-                arrayList.remove(x);
-                count++;
-                x--;
+                if (x != 0) {
+                    x--;
+                }
             } else {
                 x++;
             }
@@ -39,3 +37,4 @@ public class GameNumber {
         return count;
     }
 }
+
