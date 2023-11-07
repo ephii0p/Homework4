@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Task3 {
+public class GameNumber {
     public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < 10; i++) {
             arrayList.add(random.nextInt(10));
         }
-        System.out.println(arrayList);
-        System.out.println(Count(arrayList));
-        System.out.println(arrayList);
+        System.out.println("Дана последовательность " + arrayList);
+        System.out.println("Количество вычеркиваний: " + Count(arrayList));
+        System.out.println("Осталось в последовательности " + arrayList);
     }
 
     public static int Count(List<Integer> arrayList) {
         int count = 0;
-        for (int x = 0; x < arrayList.size();) {
+        for (int x = 0; x < arrayList.size(); ) {
             if (x == arrayList.size() - 1) {
                 break;
             }

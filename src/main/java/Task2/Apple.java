@@ -7,7 +7,7 @@ public class Apple {
         System.out.println("Введите число яблок");
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        System.out.println(x + " " + getAppleAddition(x));
+        System.out.println("Иван хранит у себя " + x + " " + getAppleAddition(x));
     }
 
     public static String getAppleAddition(int num) {
