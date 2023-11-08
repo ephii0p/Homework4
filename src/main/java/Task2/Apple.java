@@ -15,23 +15,23 @@ public class Apple {
 
     public static void getAppleAddition(int num, String name) {
         int preLastDigit = num % 100 / 10;
-        String s;
+        String appleName;
         if (preLastDigit == 1) {
-            s = "яблок";
+            appleName = "яблок";
         }
         switch (num % 10) {
             case 1:
-                s = "яблоко";
+                appleName = "яблоко";
                 break;
             case 2:
             case 3:
             case 4:
-                s = "яблока";
+                appleName = "яблока";
                 break;
             default:
-                s = "яблок";
+                appleName = "яблок";
                 break;
         }
-        System.out.println(name + " хранит у себя " + num + " " + s);
+        System.out.println(name + " хранит у себя " + num + " " + appleName);
     }
 }
