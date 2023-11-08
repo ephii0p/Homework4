@@ -3,29 +3,36 @@ package Task2;
 import java.util.Scanner;
 
 public class Apple {
-    public static String name = "Иван";
+    //public static String name = "Иван";
 
     public static void main(String[] args) {
+        String name = "Иван";
         System.out.println("Введите число яблок");
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        System.out.println(name + " хранит у себя " + x + " " + getAppleAddition(x));
+        getAppleAddition(x, name);
     }
 
-    public static String getAppleAddition(int num) {
+    public static String getAppleAddition(int num, String name) {
         int preLastDigit = num % 100 / 10;
+        String s;
         if (preLastDigit == 1) {
             return "яблок";
         }
         switch (num % 10) {
             case 1:
-                return "яблоко";
+                s = "яблоко";
+                break;
             case 2:
             case 3:
             case 4:
-                return "яблока";
+                s = "яблока";
+                break;
             default:
-                return "яблок";
+                s = "яблок";
+                break;
         }
+        System.out.println(name + " хранит у себя " + num + " " + s);
+        return s;
     }
 }
