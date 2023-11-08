@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Apple {
     public static String name = "Иван";
+
     public static void main(String[] args) {
         System.out.println("Введите число яблок");
         Scanner scanner = new Scanner(System.in);
