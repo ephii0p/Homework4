@@ -13,7 +13,6 @@ public class GameNumber {
         }
         System.out.println("Дана последовательность " + arrayList);
         System.out.println("Количество вычеркиваний: " + Count(arrayList));
-        System.out.println("Осталось в последовательности " + arrayList);
     }
 
     public static int Count(List<Integer> arrayList) {
@@ -24,8 +23,8 @@ public class GameNumber {
             }
             if (arrayList.get(x) + arrayList.get(x + 1) == 9 ||
                     arrayList.get(x) == (arrayList.get(x + 1))) {
-                arrayList.remove(x);
-                arrayList.remove(x);
+                System.out.println("Вычеркнуто " + arrayList.remove(x) + " и " + arrayList.remove(x));
+                System.out.println("Осталось в последовательности " + arrayList);
                 count++;
                 if (x != 0) {
                     x--;

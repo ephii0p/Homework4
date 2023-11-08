@@ -3,11 +3,12 @@ package Task2;
 import java.util.Scanner;
 
 public class Apple {
+    public static String name = "Иван";
     public static void main(String[] args) {
         System.out.println("Введите число яблок");
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        System.out.println("Иван хранит у себя " + x + " " + getAppleAddition(x));
+        System.out.println(name + " хранит у себя " + x + " " + getAppleAddition(x));
     }
 
     public static String getAppleAddition(int num) {
