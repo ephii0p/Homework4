@@ -14,10 +14,7 @@ public class Apple {
     public static void getAppleAddition(int num, String name) {
         int preLastDigit = num % 100 / 10;
         String appleName;
-        if (preLastDigit == 1) {
-            appleName = "яблок";
-        }
-        switch (num % 10) {
+              switch (num % 10) {
             case 1:
                 appleName = "яблоко";
                 break;
