@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class Apple {
 
     public static void main(String[] args) {
-        String name = "Иван";
         System.out.println("Введите число яблок");
         Scanner scanner = new Scanner(System.in);
         int quantityApple = scanner.nextInt();
-        getAppleAddition(quantityApple, name);
+        getAppleAddition(quantityApple, "Иван");
     }
 
     public static void getAppleAddition(int num, String name) {
