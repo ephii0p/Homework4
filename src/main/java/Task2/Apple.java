@@ -14,7 +14,8 @@ public class Apple {
     public static void getAppleAddition(int num, String name) {
         int preLastDigit = num % 100 / 10;
         String appleName;
-              switch (num % 10) {
+
+        switch (num % 10) {
             case 1:
                 appleName = "яблоко";
                 break;
@@ -24,6 +25,14 @@ public class Apple {
                 appleName = "яблока";
                 break;
             default:
+                appleName = "яблок";
+                break;
+        }
+        switch (num) {
+            case 11:
+            case 12:
+            case 13:
+            case 14:
                 appleName = "яблок";
                 break;
         }
