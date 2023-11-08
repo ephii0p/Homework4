@@ -13,7 +13,6 @@ public class GameNumber {
         }
         System.out.println("Дана последовательность " + arrayList);
         System.out.println("Количество вычеркиваний: " + Count(arrayList));
-
     }
 
     public static int Count(List<Integer> arrayList) {
@@ -33,7 +32,8 @@ public class GameNumber {
             } else {
                 x++;
             }
-        }System.out.println("Результирующий счет = " + count);
+        }
+        System.out.println("Результирующий счет = " + count);
         return count;
     }
 }
