@@ -13,11 +13,11 @@ public class Apple {
         getAppleAddition(x, name);
     }
 
-    public static String getAppleAddition(int num, String name) {
+    public static void getAppleAddition(int num, String name) {
         int preLastDigit = num % 100 / 10;
         String s;
         if (preLastDigit == 1) {
-            return "яблок";
+            s = "яблок";
         }
         switch (num % 10) {
             case 1:
@@ -33,6 +33,5 @@ public class Apple {
                 break;
         }
         System.out.println(name + " хранит у себя " + num + " " + s);
-        return s;
     }
 }
